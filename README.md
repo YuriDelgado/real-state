@@ -1,24 +1,41 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This are the steps necessary to get the application up and running.
 
-Things you may want to cover:
+###### Ruby version
+    - 2.7.1
 
-* Ruby version
+###### Ggems
+    - pg
+    - jbuilder
 
-* System dependencies
+###### Gems for testing
+    - faker
+    - factory_bot_rails
+    - rspec-rails
 
-* Configuration
+###### Configuration (standard rails json API)
+    - clone this repo
+    - move to the folder created
+    - bundle install
 
-* Database creation
+###### Database creation
+    - rails db:setup
+    - rails db:migrate
+    ** need to have pg database locally installed
 
-* Database initialization
+###### redo: rails db:drop db:create db:migrate
 
-* How to run the test suite
+###### Database initialization
+    - rails db:seed
 
-* Services (job queues, cache servers, search engines, etc.)
+###### How to run the test suite
+    - rspec
 
-* Deployment instructions
+###### Services (job queues, cache servers, search engines, etc.)
+    - none
+
+###### Deployment instructions
+    - none
 
 * ...
