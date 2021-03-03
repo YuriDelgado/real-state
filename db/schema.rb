@@ -23,9 +23,9 @@ ActiveRecord::Schema.define(version: 2021_03_02_044851) do
     t.string "internal_number"
     t.string "neighborhood", limit: 128, null: false
     t.string "city", limit: 64, null: false
-    t.string "country", limit: 2, null: false
+    t.string "country", null: false
     t.integer "rooms", null: false
-    t.string "bathrooms", null: false
+    t.decimal "bathrooms", precision: 5, scale: 2, default: "0.0", null: false
     t.string "comments", limit: 128
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

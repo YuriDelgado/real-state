@@ -8,9 +8,9 @@ class CreateRealstates < ActiveRecord::Migration[6.0]
       t.string :internal_number
       t.string :neighborhood, null: false, limit: 128
       t.string :city, null: false, limit: 64
-      t.string :country, null: false, limit: 2
+      t.string :country, null: false
       t.integer :rooms, null: false
-      t.string :bathrooms, null: false
+      t.decimal :bathrooms, null: false, scale: 2, precision: 5, default: 0.0
       t.string :comments, limit: 128
 
       t.timestamps
